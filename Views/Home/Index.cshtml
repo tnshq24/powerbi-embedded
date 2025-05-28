@@ -1,0 +1,43 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Power BI Embedded Demo</h1>
+    <p>Learn about embedding Power BI reports in your organization.</p>
+    
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Embed for Your Customers</h5>
+                    <p class="card-text">
+                        This demo shows how to embed Power BI reports using the "app owns data" scenario.
+                        Customers can view reports without needing Power BI licenses or authentication.
+                    </p>
+                    <a asp-controller="Home" asp-action="Embed" class="btn btn-primary">View Embedded Report</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mt-4">
+        <h3>Setup Instructions</h3>
+        <div class="alert alert-info">
+            <h4>Before you can use this application:</h4>
+            <ol class="text-left">
+                <li>Register an Azure AD application</li>
+                <li>Configure the required API permissions for Power BI</li>
+                <li>Update the <code>appsettings.json</code> file with your:
+                    <ul>
+                        <li>Tenant ID</li>
+                        <li>Client ID</li>
+                        <li>Client Secret</li>
+                        <li>Workspace ID</li>
+                        <li>Report ID</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </div>
+</div> 
